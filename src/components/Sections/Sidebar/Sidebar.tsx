@@ -9,7 +9,7 @@ function Sidebar() {
         <ProfilePhoto></ProfilePhoto>
       </div>
       <div>
-        <MyLinks></MyLinks>
+        <MyLinks />
       </div>
     </main>
   );

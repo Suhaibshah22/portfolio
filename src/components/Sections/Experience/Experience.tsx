@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 export const Experience = (props: ExperienceProps) => {
   return (
-    <Card className="mt-2 pr-5 pl-5 pt-5">
+    <Card className="mt-2 pr-5 pl-5 pt-5 ">
       <div className="">
         <div className="grid grid-cols-4">
           <div className="col-span-3">

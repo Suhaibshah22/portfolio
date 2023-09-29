@@ -1,3 +1,6 @@
+import * as React from 'react';
+import { StaticImageData } from "next/image"
+
 export type ExperienceProps = {
     companyName: string;
     location: string;
@@ -7,12 +10,23 @@ export type ExperienceProps = {
 };
 
 type skill = {
-    name: string
-    description: string
+    name: string;
+    description?: string;
+    icon?: React.ReactNode;
 }
 
 export type HeroProps = {
     summary: string;
-    Expertise: string;
-    skills: skill[]
+    expertise: string;
+    skills: skill[];
 }
+
+
+export type ProjectProps = {
+    title: string;
+    time: string;
+    skills: skill[];
+    description: string;
+    link: string;
+    images: StaticImageData[]
+}   
