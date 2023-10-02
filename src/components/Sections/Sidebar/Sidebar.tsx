@@ -1,17 +1,18 @@
 import React from "react";
+import { GridWrapper } from "@/components/Wrapper/GridWrapper";
 import { ProfilePhoto } from "./profile-photo";
 import MyLinks from "./my-links";
 
-function Sidebar() {
+function Sidebar({ className }: React.HTMLProps<HTMLDivElement>) {
   return (
-    <main className="grid grid-rows-2">
-      <div>
-        <ProfilePhoto></ProfilePhoto>
+    <div className={className}>
+      <div className="relative aspect-square">
+        <ProfilePhoto />
       </div>
       <div>
         <MyLinks />
       </div>
-    </main>
+    </div>
   );
 }
 

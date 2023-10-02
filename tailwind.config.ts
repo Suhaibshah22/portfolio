@@ -2,11 +2,21 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
+  safelist: [
+    {
+      pattern: /\!?col-span-\d+/,
+      variants: ["sm", "md", "lg", "xl", "2xl"],
+    },
+    {
+      pattern: /\!?grid-cols-\d+/,
+      variants: ["sm", "md", "lg", "xl", "2xl"],
+    },
+  ],
   theme: {
     container: {
       center: true,
@@ -73,4 +83,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

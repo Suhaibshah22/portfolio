@@ -17,7 +17,7 @@ export function ProfilePhoto() {
         className="rounded-lg"
         src={profilePhoto}
         alt="Photo"
-        layout="responsive"
+        fill
         objectFit="cover"
       ></Image>
     </Card>

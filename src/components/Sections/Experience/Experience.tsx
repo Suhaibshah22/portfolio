@@ -5,20 +5,18 @@ import { Separator } from "@/components/ui/separator";
 
 export const Experience = (props: ExperienceProps) => {
   return (
-    <Card className="mt-2 pr-5 pl-5 pt-5 ">
-      <div className="">
-        <div className="grid grid-cols-4">
-          <div className="col-span-3">
-            <h1 className="text-2xl font-semibold">{props.companyName}</h1>
-            <h2>{props.position}</h2>
-          </div>
-          <div className="text-right">
-            <h2 className="text-1xl font-semibold">{props.time}</h2>
-            <h1 className="text-1xl font-light">{props.location}</h1>
-          </div>
+    <Card className="pr-5 pl-5 pt-5" mobile={6}>
+      <div className="flex flex-col lg:flex-row justify-between gap-2">
+        <div className="col-span-3">
+          <h1 className="text-2xl font-semibold">{props.companyName}</h1>
+          <h2>{props.position}</h2>
+        </div>
+        <div className="lg:text-right">
+          <h2 className="text-1xl font-semibold">{props.time}</h2>
+          <h1 className="text-1xl font-light">{props.location}</h1>
         </div>
       </div>
-      <Separator orientation="horizontal" className="m-4" />
+      <Separator orientation="horizontal" className="my-4" />
       <div>
         <CardContent className="mt-4">
           {props.description.map((point) => {
