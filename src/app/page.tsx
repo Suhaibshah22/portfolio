@@ -4,12 +4,6 @@ import { GridWrapper } from "@/components/Wrapper/GridWrapper";
 import Hero from "@/components/Sections/Hero/Hero";
 import Project from "@/components/Sections/Projects/Project";
 import Sidebar from "@/components/Sections/Sidebar/Sidebar";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
 import { workExperienceData } from "@/data/WorkExperienceData";
 import { heroData } from "@/data/heroData";
 import { projectData } from "@/data/projectData";

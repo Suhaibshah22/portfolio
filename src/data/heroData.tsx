@@ -3,7 +3,7 @@ import { AppWindowIcon, CpuIcon, DatabaseIcon } from "lucide-react";
 
 export const heroData: HeroProps = {
   summary:
-    "I am an Computer/Software Engineer based in Kuala Lumpur, Malaysia. I like to solve challenging technical problems. Get in touch if you would like to work with me!",
+    "I am a Computer & Software Engineer based in Kuala Lumpur, Malaysia. I like to solve challenging technical problems. Get in touch if you would like to work with me!",
   expertise: "Software & Embedded Systems Engineer",
   skills: [
     {
