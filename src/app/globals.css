@@ -87,3 +87,36 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-waving {
+  animation: waving 2.5s infinite;
+  /* transform-origin: 70% 70%; */
+  transform-origin: bottom right;
+}

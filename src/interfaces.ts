@@ -37,3 +37,18 @@ export type GridWrapperProps = {
   tablet?: number;
   desktop?: number;
 } & HTMLProps<HTMLDivElement>;
+
+
+export type SidebarProps = {
+  profilePhoto: StaticImageData;
+  email: string;
+  githubUrl: string;
+  linkedInUrl: string;
+  resumeUrl: string;
+  twitterUrl: string;
+  education: {
+    university: string;
+    graduation: string;
+    program: string;
+  }
+}

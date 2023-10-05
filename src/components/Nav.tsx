@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "./ui/mode-toggle";
 
@@ -14,7 +13,7 @@ function Nav({ className }: React.HTMLProps<HTMLDivElement>) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Home
+              {" "}
             </a>
           </li>
           <li>

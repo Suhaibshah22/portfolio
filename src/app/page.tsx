@@ -1,12 +1,14 @@
 import Nav from "@/components/Nav";
-import { Experience } from "@/components/Sections/Experience/Experience";
+import { Experience } from "@/components/Sections/Experience";
 import { GridWrapper } from "@/components/Wrapper/GridWrapper";
-import Hero from "@/components/Sections/Hero/Hero";
-import Project from "@/components/Sections/Projects/Project";
-import Sidebar from "@/components/Sections/Sidebar/Sidebar";
+import Hero from "@/components/Sections/Hero";
+import Project from "@/components/Sections/Project";
+import Sidebar from "@/components/Sections/Sidebar";
 import { workExperienceData } from "@/data/WorkExperienceData";
 import { heroData } from "@/data/heroData";
 import { projectData } from "@/data/projectData";
+import { sidebarData } from "@/data/sidebarData";
+import { WavesIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,7 +17,10 @@ export default function Home() {
         <Nav className="col-span-5" />
         <GridWrapper grid={1} mobile={5} tablet={5} desktop={5}>
           <div className="mt-12 flex flex-col items-left">
-            <h1 className="text-4xl font-bold">Hi, it's me Suhaib Shah!</h1>
+            <span className="flex items-center">
+              <h1 className="text-4xl font-bold">Hi, it's me Suhaib Shah!</h1>
+              <p className="text-4xl animate-waving">{"\u{1F44B}"}</p>
+            </span>
             <p className="text-1xl text-muted-foreground">
               Find out about what I have been up to, feel free to drop me an
               email.
@@ -29,7 +34,15 @@ export default function Home() {
               desktop={2}
               className="self-start relative"
             >
-              <Sidebar />
+              <Sidebar
+                profilePhoto={sidebarData.profilePhoto}
+                twitterUrl={sidebarData.twitterUrl}
+                githubUrl={sidebarData.githubUrl}
+                email={sidebarData.email}
+                linkedInUrl={sidebarData.linkedInUrl}
+                resumeUrl={sidebarData.resumeUrl}
+                education={sidebarData.education}
+              />
             </GridWrapper>
             <GridWrapper grid={1} mobile={6} tablet={4} desktop={4}>
               <Hero

@@ -17,7 +17,7 @@ export const heroData: HeroProps = {
       icon: <AppWindowIcon />,
     },
     {
-      name: "Embedded Systems Engineering",
+      name: "Embedded Engineering",
       description: "I develop IoT devices of my own.",
       icon: <CpuIcon />,
     },
