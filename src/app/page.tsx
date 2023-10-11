@@ -9,23 +9,27 @@ import { heroData } from "@/data/heroData";
 import { projectData } from "@/data/projectData";
 import { sidebarData } from "@/data/sidebarData";
 import { WavesIcon } from "lucide-react";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function Home() {
   return (
     <main className="p-5">
       <GridWrapper grid={5} className="max-w-screen-lg mx-auto">
-        <Nav className="col-span-5" />
         <GridWrapper grid={1} mobile={5} tablet={5} desktop={5}>
-          <div className="mt-12 flex flex-col items-left">
-            <span className="flex items-center">
-              <h1 className="text-4xl font-bold">Hi, it's me Suhaib Shah!</h1>
-              <p className="text-4xl animate-waving">{"\u{1F44B}"}</p>
-            </span>
-            <p className="text-1xl text-muted-foreground">
-              Find out about what I have been up to, feel free to drop me an
-              email.
-            </p>
+          <div className="flex place-items-center justify-between">
+            <div className="mt-12 flex flex-col items-left">
+              <span className="flex items-center">
+                <h1 className="text-4xl font-bold">Hi, it's me Suhaib Shah!</h1>
+                <p className="text-4xl animate-waving">{"\u{1F44B}"}</p>
+              </span>
+              <p className="text-1xl text-muted-foreground">
+                Find out about what I have been up to, feel free to drop me an
+                email.
+              </p>
+            </div>
+            <ModeToggle />
           </div>
+
           <GridWrapper grid={6} className="mt-12">
             <GridWrapper
               grid={1}

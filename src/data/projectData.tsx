@@ -1,6 +1,8 @@
 import { ProjectProps } from "@/interfaces";
-import face1 from "./images/face-1.png";
+import faceWeb from "./images/face-auth-1.png";
+import faceMobile from "./images/face-mobile.png";
 import w1 from "./images/w1.jpg";
+import iotWeb from "./images/iot-web.jpeg";
 
 export const projectData: ProjectProps[] = [
   {
@@ -10,20 +12,16 @@ export const projectData: ProjectProps[] = [
     time: "2023",
     skills: [{ name: "Golang" }, { name: "Vector DB" }, { name: "Qdrant" }],
     link: "https://www.mazedesignlab.com",
-    images: [face1, w1],
+    images: [faceWeb, faceMobile],
   },
   {
     title: "IoT Solution",
     description:
-      "An end2end IoT solution with a custom data aquistion & controller I developed along with the cloud services and front end.",
+      "An End-2-End IoT solution with a custom data aquistion & controller I developed along with the cloud services and front end.",
     time: "2022-Present",
-    skills: [
-      { name: "Embedded Design" },
-      { name: "Embedded C" },
-      { name: "NestJs" },
-    ],
+    skills: [{ name: "Embedded Design" }, { name: "RTOS" }, { name: "NestJs" }],
     link: "https://api.syedsuhaibshah.com",
-    images: [w1, face1],
+    images: [iotWeb, faceWeb],
   },
   {
     title: "SG Parking API",
@@ -32,6 +30,6 @@ export const projectData: ProjectProps[] = [
     time: "2023",
     skills: [{ name: "Java" }, { name: "PostGIS" }, { name: "Spring Boot" }],
     link: "https://sgparkingapi.syedsuhaibshah.com",
-    images: [w1, face1],
+    images: [w1, faceWeb],
   },
 ];

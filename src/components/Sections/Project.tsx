@@ -47,8 +47,8 @@ const Project = (props: ProjectProps) => {
           })}
         </Card>
       </GridWrapper>
-      <div className="col-span-10 mb-10 ">
-        <Swiper spaceBetween={10} slidesPerView={1.1}>
+      <div className="col-span-10 mb-10">
+        <Swiper spaceBetween={10} slidesPerView={1.6}>
           {props.images.map((image, index) => {
             return (
               <div key={index}>
@@ -57,12 +57,14 @@ const Project = (props: ProjectProps) => {
                   key={index}
                 >
                   <Image
-                    className="rounded-lg"
+                    className="rounded-lg w-auto h-80"
                     src={image}
-                    alt="Photo"
-                    layout="responsive"
-                    objectFit="contain"
-                  ></Image>
+                    alt="None"
+                    objectFit="cover"
+
+                    // layout="fill"
+                    // style={{ width: "auto", height: "10" }}
+                  />
                 </SwiperSlide>
               </div>
             );
