@@ -42,28 +42,43 @@ const Project = (props: ProjectProps) => {
           {props.description}
         </Card>
         <Card className="p-4" mobile={2} tablet={1} desktop={1}>
-          {props.skills.map((skill) => {
-            return <li>{skill.name}</li>;
+          {props.skills.map((skill, index) => {
+            return <li key={index}>{skill.name}</li>;
           })}
         </Card>
       </GridWrapper>
       <div className="col-span-10 mb-10">
-        <Swiper spaceBetween={10} slidesPerView={1.6}>
+        <Swiper
+          slidesPerView={1.1}
+          spaceBetween={7}
+          // breakpoints={{
+          //   640: {
+          //     slidesPerView: 1.1,
+          //     spaceBetween: 20,
+          //   },
+          //   768: {
+          //     slidesPerView: 1.1,
+          //     spaceBetween: 40,
+          //   },
+          //   1024: {
+          //     slidesPerView: 1.1,
+          //     spaceBetween: 50,
+          //   },
+          // }}
+          className=""
+        >
           {props.images.map((image, index) => {
             return (
               <div key={index}>
                 <SwiperSlide
-                  className="aspect-video hover:cursor-grab active:cursor-grabbing"
+                  className="hover:cursor-grab active:cursor-grabbing"
                   key={index}
                 >
                   <Image
-                    className="rounded-lg w-auto h-80"
                     src={image}
                     alt="None"
-                    objectFit="cover"
-
-                    // layout="fill"
-                    // style={{ width: "auto", height: "10" }}
+                    layout="cover"
+                    style={{ width: "auto", height: "500px" }}
                   />
                 </SwiperSlide>
               </div>

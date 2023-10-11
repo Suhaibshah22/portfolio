@@ -1,8 +1,8 @@
 import { ProjectProps } from "@/interfaces";
-import faceWeb from "./images/face-auth-1.png";
-import faceMobile from "./images/face-mobile.png";
-import w1 from "./images/w1.jpg";
-import iotWeb from "./images/iot-web.jpeg";
+import faceWeb from "./images/face-1.png";
+import faceMobile from "./images/face-2.png";
+import iotWeb from "./images/iot-1.jpeg";
+import iotBoard from "./images/iot-2.jpg";
 
 export const projectData: ProjectProps[] = [
   {
@@ -21,15 +21,15 @@ export const projectData: ProjectProps[] = [
     time: "2022-Present",
     skills: [{ name: "Embedded Design" }, { name: "RTOS" }, { name: "NestJs" }],
     link: "https://api.syedsuhaibshah.com",
-    images: [iotWeb, faceWeb],
+    images: [iotWeb, iotBoard],
   },
-  {
-    title: "SG Parking API",
-    description:
-      "An API for Singapore where you can request for the nearest parking lot near you with available parking spots.",
-    time: "2023",
-    skills: [{ name: "Java" }, { name: "PostGIS" }, { name: "Spring Boot" }],
-    link: "https://sgparkingapi.syedsuhaibshah.com",
-    images: [w1, faceWeb],
-  },
+  // {
+  //   title: "SG Parking API",
+  //   description:
+  //     "An API for Singapore where you can request for the nearest parking lot near you with available parking spots.",
+  //   time: "2023",
+  //   skills: [{ name: "Java" }, { name: "PostGIS" }, { name: "Spring Boot" }],
+  //   link: "https://sgparkingapi.syedsuhaibshah.com",
+  //   images: [w1, faceWeb],
+  // },
 ];

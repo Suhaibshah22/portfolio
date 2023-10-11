@@ -19,9 +19,9 @@ export const Hero = (props: HeroProps) => {
         <h1 className="text-2xl text-left font-semibold">{props.expertise}</h1>
       </Card>
       <GridWrapper grid={3} mobile={5}>
-        {props.skills.map((skill) => {
+        {props.skills.map((skill, index) => {
           return (
-            <Card className="p-6 min-h-[8rem] flex  items-center">
+            <Card className="p-6 min-h-[8rem] flex  items-center" key={index}>
               <div className="">{skill.icon}</div>
               <div className="text-center">
                 <h2>{skill.name}</h2>

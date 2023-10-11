@@ -8,7 +8,6 @@ import { workExperienceData } from "@/data/WorkExperienceData";
 import { heroData } from "@/data/heroData";
 import { projectData } from "@/data/projectData";
 import { sidebarData } from "@/data/sidebarData";
-import { WavesIcon } from "lucide-react";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function Home() {
@@ -54,9 +53,10 @@ export default function Home() {
                 expertise={heroData.expertise}
                 skills={heroData.skills}
               />
-              {workExperienceData.map((experience) => {
+              {workExperienceData.map((experience, index) => {
                 return (
                   <Experience
+                    key={index}
                     companyName={experience.companyName}
                     position={experience.position}
                     time={experience.time}
@@ -67,9 +67,10 @@ export default function Home() {
               })}
             </GridWrapper>
             <GridWrapper grid={1} mobile={6}>
-              {projectData.map((project) => {
+              {projectData.map((project, index) => {
                 return (
                   <Project
+                    key={index}
                     title={project.title}
                     time={project.time}
                     skills={project.skills}
