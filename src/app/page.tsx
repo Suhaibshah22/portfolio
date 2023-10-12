@@ -18,8 +18,12 @@ export default function Home() {
           <div className="flex place-items-center justify-between">
             <div className="mt-12 flex flex-col items-left">
               <span className="flex items-center">
-                <h1 className="text-4xl font-bold">Hi, it's me Suhaib Shah!</h1>
-                <p className="text-4xl animate-waving">{"\u{1F44B}"}</p>
+                <h1 className="text-4xl font-bold">
+                  Hi, it's me Suhaib Shah!{" "}
+                  <div className="inline-block animate-waving">
+                    {"\u{1F44B}"}
+                  </div>
+                </h1>
               </span>
               <p className="text-1xl text-muted-foreground">
                 Find out about what I have been up to, feel free to drop me an

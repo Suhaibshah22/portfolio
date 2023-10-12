@@ -21,9 +21,15 @@ export const Hero = (props: HeroProps) => {
       <GridWrapper grid={3} mobile={5}>
         {props.skills.map((skill, index) => {
           return (
-            <Card className="p-6 min-h-[8rem] flex  items-center" key={index}>
+            <Card
+              desktop={1}
+              tablet={1}
+              mobile={3}
+              className="p-4 min-h-[6rem] flex lg:flex-col items-center gap-3"
+              key={index}
+            >
               <div className="">{skill.icon}</div>
-              <div className="text-center">
+              <div className="break-words">
                 <h2>{skill.name}</h2>
               </div>
             </Card>

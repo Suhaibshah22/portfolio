@@ -49,7 +49,7 @@ const Project = (props: ProjectProps) => {
       </GridWrapper>
       <div className="col-span-10 mb-10">
         <Swiper
-          slidesPerView={1.1}
+          slidesPerView="auto"
           spaceBetween={7}
           // breakpoints={{
           //   640: {
@@ -71,14 +71,14 @@ const Project = (props: ProjectProps) => {
             return (
               <div key={index}>
                 <SwiperSlide
-                  className="hover:cursor-grab active:cursor-grabbing"
+                  className="hover:cursor-grab active:cursor-grabbing !flex items-start"
                   key={index}
                 >
-                  <Image
-                    src={image}
+                  <img
+                    src={image.src}
                     alt="None"
-                    layout="cover"
-                    style={{ width: "auto", height: "500px" }}
+                    className="!object-contain object-top"
+                    style={{ maxHeight: "500px" }}
                   />
                 </SwiperSlide>
               </div>

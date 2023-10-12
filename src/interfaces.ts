@@ -38,7 +38,6 @@ export type GridWrapperProps = {
   desktop?: number;
 } & HTMLProps<HTMLDivElement>;
 
-
 export type SidebarProps = {
   profilePhoto: StaticImageData;
   email: string;
@@ -50,5 +49,5 @@ export type SidebarProps = {
     university: string;
     graduation: string;
     program: string;
-  }
-}
+  };
+};
