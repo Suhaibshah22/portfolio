@@ -3,8 +3,19 @@ import faceWeb from "./images/face-1.png";
 import faceMobile from "./images/face-2.png";
 import iotWeb from "./images/iot-1.jpeg";
 import iotBoard from "./images/iot-2.jpg";
+import teakitaWeb from "./images/teakita-1.png";
+import teakitaMobile from "./images/teakita-2.png";
 
 export const projectData: ProjectProps[] = [
+  {
+    title: "Teakita.com",
+    description:
+      "An E-Commerce platform for buying and selling furniture items, with an integrated admin panel.",
+    time: "2022",
+    skills: [{ name: "Express Js" }, { name: "React" }, { name: "Postgres" }],
+    link: "https://teakita.com",
+    images: [teakitaWeb, teakitaMobile],
+  },
   {
     title: "FaceAuth",
     description:
@@ -23,13 +34,4 @@ export const projectData: ProjectProps[] = [
     link: "https://api.syedsuhaibshah.com",
     images: [iotWeb, iotBoard],
   },
-  // {
-  //   title: "SG Parking API",
-  //   description:
-  //     "An API for Singapore where you can request for the nearest parking lot near you with available parking spots.",
-  //   time: "2023",
-  //   skills: [{ name: "Java" }, { name: "PostGIS" }, { name: "Spring Boot" }],
-  //   link: "https://sgparkingapi.syedsuhaibshah.com",
-  //   images: [w1, faceWeb],
-  // },
 ];
