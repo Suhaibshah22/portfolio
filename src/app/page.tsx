@@ -1,4 +1,3 @@
-import Nav from "@/components/Nav";
 import { Experience } from "@/components/Sections/Experience";
 import { GridWrapper } from "@/components/Wrapper/GridWrapper";
 import Hero from "@/components/Sections/Hero";
